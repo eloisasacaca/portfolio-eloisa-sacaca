@@ -85,8 +85,8 @@ document.getElementById("media-retry").addEventListener("click",loadMedia);
 document.addEventListener("click",function(event){
  const button=event.target.closest?.("[data-video]");if(!button)return;
  const id=button.dataset.video;if(!/^[A-Za-z0-9_-]{11}$/.test(id))return;
- const frame=document.createElement("iframe");frame.src="https://www.youtube-nocookie.com/embed/"+id+"?autoplay=1&rel=0";frame.title=button.dataset.title||"Vídeo cultural";
- frame.allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";frame.allowFullscreen=true;frame.referrerPolicy="strict-origin-when-cross-origin";button.parentElement.replaceChildren(frame);frame.focus();
+ const frame=document.createElement("iframe");frame.src="https://www.youtube-nocookie.com/embed/"+id+"?autoplay=1&playsinline=1&rel=0&enablejsapi=1";frame.title=button.dataset.title||"Vídeo cultural";
+ frame.allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";frame.allowFullscreen=true;frame.setAttribute("loading","eager");frame.referrerPolicy="strict-origin-when-cross-origin";button.parentElement.replaceChildren(frame);frame.focus();
 });
 loadMedia();
 })();
