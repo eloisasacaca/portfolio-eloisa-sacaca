@@ -30,7 +30,7 @@ function renderComposition(item,index){
  const driveMatch=media.match(/^https:\/\/drive\.google\.com\/file\/d\/([A-Za-z0-9_-]+)\//);
  const driveId=driveMatch?driveMatch[1]:"";
  const player=media&&nativeMedia(item,"audio")?'<audio class="pm-audio" controls preload="none" aria-label="Ouvir '+escapeHTML(item.title)+'"><source src="'+escapeHTML(media)+'"'+(item.contentType?' type="'+escapeHTML(item.contentType)+'"':'')+'></audio>':driveId?'<button class="pm-playDrive" type="button" data-drive-id="'+escapeHTML(driveId)+'" data-title="'+escapeHTML(item.title)+'" aria-label="Reproduzir '+escapeHTML(item.title)+'"><span aria-hidden="true">▶</span> Reproduzir música</button><div class="pm-driveMount"></div>':'';
- return '<article class="pm-compositionCard'+(item.isFeatured?' pm-featured':'')+'"><div class="pm-trackTop"><span class="pm-trackNumber" aria-hidden="true">'+String(index+1).padStart(2,"0")+'</span>'+meta(item)+'</div><h3 class="serif">'+escapeHTML(item.title)+'</h3><p class="pm-caption">'+escapeHTML(item.caption)+'</p>'+player+'</article>';
+ return '<article class="pm-compositionCard'+(item.isFeatured?' pm-featured':'')+'"><div class="pm-trackTop"><span class="pm-trackNumber" aria-hidden="true">'+String(index+1).padStart(2,"0")+'</span></div><h3 class="serif">'+escapeHTML(item.title)+'</h3><p class="pm-caption">'+escapeHTML(item.caption)+'</p>'+player+'</article>';
 }
 document.addEventListener("click",async function(event){
  const button=event.target.closest(".pm-playNative");if(!button)return;
