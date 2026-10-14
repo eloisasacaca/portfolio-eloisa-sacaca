@@ -60,7 +60,7 @@
       "mediaUrl": "assets/acervo/2015-forum.jpg",
       "contentType": "image/jpeg",
       "isFeatured": false,
-      "sortOrder": 4
+      "sortOrder": 3
     },
     {
       "id": "9e51a8d3-a7fa-4195-aa06-6aaa7cc46371",
@@ -152,7 +152,7 @@
       "caption": "Premio Mestre Jorge",
       "mediaUrl": "assets/acervo/2025-premio-mestre-jorge.jpg",
       "contentType": "image/jpeg",
-      "sortOrder": 0
+      "sortOrder": 1
     },
     {
       "id": "ensaio-de-rua",
