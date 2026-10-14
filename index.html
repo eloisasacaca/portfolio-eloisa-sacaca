@@ -86,6 +86,26 @@ dialog{background:var(--surface);color:var(--text);border:1px solid var(--line);
  .culture-art .caption{left:22px;right:22px;bottom:19px;max-width:none;font-size:10px;line-height:1.5;z-index:2}
 }
 @media(max-width:360px){.culture-art{min-height:310px;padding-inline:18px}.culture-art .culture-word{font-size:clamp(32px,9.2vw,37px)}.culture-art .caption{left:18px;right:18px}}
+
+/* Refinamento mobile: propósito e apresentação */
+@media(max-width:580px){
+ .statement{padding:48px 0 52px}
+ .statement-inner{display:flex;flex-direction:column;align-items:flex-start;gap:23px}
+ .statement .eyebrow{display:block;width:100%;max-width:none;font-size:11px;line-height:1.7;letter-spacing:.14em;white-space:normal}
+ .statement .eyebrow br{display:block}
+ .statement p:not(.eyebrow){font-size:clamp(27px,7.5vw,36px);line-height:1.38;letter-spacing:-.035em;max-width:100%;overflow-wrap:normal}
+ .statement p:not(.eyebrow) br{display:none}
+ .about{padding-top:55px;padding-bottom:58px;gap:28px}
+ .about .section-title h2{font-size:clamp(38px,10.5vw,51px);line-height:1.13;letter-spacing:-.04em;max-width:100%}
+ .about .section-title h2 br{display:none}
+ .about .section-title .eyebrow{font-size:11px;letter-spacing:.14em;line-height:1.6;margin-bottom:15px}
+ .about-text{margin-top:23px}
+ .about-text p{font-size:14px;line-height:1.85}
+}
+@media(max-width:360px){
+ .statement p:not(.eyebrow){font-size:27px}
+ .about .section-title h2{font-size:37px}
+}
 </style>
 </head>
 <body>
