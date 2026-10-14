@@ -32,15 +32,23 @@ function renderComposition(item,index){
  const player=media&&nativeMedia(item,"audio")?'<audio class="pm-audio" controls preload="none" aria-label="Ouvir '+escapeHTML(item.title)+'"><source src="'+escapeHTML(media)+'"'+(item.contentType?' type="'+escapeHTML(item.contentType)+'"':'')+'></audio>':driveId?'<button class="pm-playDrive" type="button" data-drive-id="'+escapeHTML(driveId)+'" data-title="'+escapeHTML(item.title)+'" aria-label="Reproduzir '+escapeHTML(item.title)+'"><span aria-hidden="true">▶</span> Reproduzir música</button><div class="pm-driveMount"></div>':'';
  return '<article class="pm-compositionCard'+(item.isFeatured?' pm-featured':'')+'"><div class="pm-trackTop"><span class="pm-trackNumber" aria-hidden="true">'+String(index+1).padStart(2,"0")+'</span>'+meta(item)+'</div><h3 class="serif">'+escapeHTML(item.title)+'</h3><p class="pm-caption">'+escapeHTML(item.caption)+'</p>'+player+link(source,'<span aria-hidden="true">♫</span> Ouvir o registro no Google Drive <span aria-hidden="true">↗</span>',"pm-listenLink")+'</article>';
 }
-document.addEventListener("click",function(event){
+document.addEventListener("click",async function(event){
  const button=event.target.closest(".pm-playDrive");if(!button)return;
  const card=button.closest(".pm-compositionCard"),mount=card&&card.querySelector(".pm-driveMount");
  if(!mount)return;
- if(mount.querySelector("iframe")){mount.replaceChildren();button.innerHTML='<span aria-hidden="true">▶</span> Reproduzir música';return;}
- document.querySelectorAll(".pm-driveMount iframe").forEach(frame=>frame.parentNode.replaceChildren());
- document.querySelectorAll(".pm-playDrive").forEach(b=>b.innerHTML='<span aria-hidden="true">▶</span> Reproduzir música');
- const iframe=document.createElement("iframe");iframe.src="https://drive.google.com/file/d/"+encodeURIComponent(button.dataset.driveId)+"/preview";iframe.title="Player de "+button.dataset.title;iframe.loading="eager";iframe.allow="autoplay";iframe.setAttribute("referrerpolicy","strict-origin-when-cross-origin");mount.appendChild(iframe);
- button.textContent="Fechar player";
+ const existing=mount.querySelector("audio,iframe");
+ if(existing){if(existing.tagName==="AUDIO"&&!existing.paused){existing.pause();button.textContent="▶ Reproduzir música";return;}if(existing.tagName==="AUDIO"){try{await existing.play();button.textContent="❚❚ Pausar música";return;}catch(e){}}mount.replaceChildren();button.textContent="▶ Reproduzir música";return;}
+ document.querySelectorAll(".pm-driveMount").forEach(m=>{m.querySelector("audio")?.pause();m.replaceChildren();});
+ document.querySelectorAll(".pm-playDrive").forEach(b=>b.textContent="▶ Reproduzir música");
+ const id=encodeURIComponent(button.dataset.driveId);
+ const audio=document.createElement("audio");audio.controls=true;audio.preload="auto";audio.className="pm-audio";audio.src="https://drive.google.com/uc?export=download&id="+id;
+ mount.appendChild(audio);button.textContent="Carregando música…";
+ let fallbackShown=false;
+ const fallback=()=>{if(fallbackShown)return;fallbackShown=true;audio.pause();audio.remove();const iframe=document.createElement("iframe");iframe.src="https://drive.google.com/file/d/"+id+"/preview?autoplay=1";iframe.title="Player de "+button.dataset.title;iframe.loading="eager";iframe.allow="autoplay";iframe.setAttribute("referrerpolicy","strict-origin-when-cross-origin");mount.appendChild(iframe);button.textContent="Fechar player (Google Drive)";};
+ audio.addEventListener("error",fallback,{once:true});
+ audio.addEventListener("playing",()=>{button.textContent="❚❚ Pausar música";});
+ audio.addEventListener("pause",()=>{if(!fallbackShown)button.textContent="▶ Reproduzir música";});
+ try{await audio.play();}catch(e){fallback();}
 });
 
 function renderVideo(item){
