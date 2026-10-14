@@ -291,7 +291,7 @@ function openProject(key,trigger){
  const list=byId('dialog-list');list.replaceChildren();
  project.items.forEach(function(text){const item=document.createElement('li');item.textContent=text;list.appendChild(item);});
  byId('dialog-note').textContent=project.note;
- const link=byId('dialog-link');link.textContent=(project.link||'Conversar sobre o projeto')+' ↗';link.href=project.url||'#contato';
+ const link=byId('dialog-link');link.replaceChildren(document.createTextNode(project.link||'Conversar sobre o projeto'),document.createTextNode(' '));const arrow=document.createElementNS('http://www.w3.org/2000/svg','svg');arrow.setAttribute('class','dialog-arrow');arrow.setAttribute('aria-hidden','true');arrow.setAttribute('viewBox','0 0 24 24');arrow.setAttribute('width','19');arrow.setAttribute('height','19');arrow.setAttribute('fill','none');arrow.setAttribute('stroke','currentColor');arrow.setAttribute('stroke-width','1.8');arrow.setAttribute('stroke-linecap','round');arrow.setAttribute('stroke-linejoin','round');const arrowPath=document.createElementNS('http://www.w3.org/2000/svg','path');arrowPath.setAttribute('d','M7 17 17 7M8 7h9v9');arrow.appendChild(arrowPath);link.appendChild(arrow);link.href=project.url||'#contato';
  if(project.url){link.target='_blank';link.rel='noopener noreferrer';link.setAttribute('aria-label',project.link+', abre em nova aba');}
  else{link.removeAttribute('target');link.removeAttribute('rel');link.removeAttribute('aria-label');}
  if(typeof dialog.showModal==='function'){dialog.showModal();document.body.classList.add('dialog-open');byId('dialog-close').focus();}
