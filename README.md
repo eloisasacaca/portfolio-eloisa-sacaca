@@ -4,7 +4,6 @@ Site pessoal sobre tecnologia, cultura amapaense e Marabaixo. Projeto próprio, 
 
 - **GitHub Pages (endereço após ativar):** https://eloisasacaca.github.io/portfolio-eloisa-sacaca/
 - **Site no Floot:** https://eloisa-sacaca.floot.app/
-- **Enviar novas mídias pelo chat:** [COMO-ATUALIZAR.md](COMO-ATUALIZAR.md)
 
 ## Publicar no GitHub Pages
 1. Abrir [Settings → Pages](https://github.com/eloisasacaca/portfolio-eloisa-sacaca/settings/pages).
@@ -21,7 +20,6 @@ As composições têm uma seção própria. YouTube abre o player ao clicar; arq
 
 O catálogo estático `acervo.json` tem os registros do GitHub Pages e usa as fotos armazenadas neste repositório. Não depende do backend Floot para funcionar. Na versão Floot, os mesmos registros ficam no banco `portfolio_media`; a API `/_api/portfolio-media` é somente leitura.
 
-Para atualizar pelo chat, o assistente adiciona os arquivos e os metadados nas duas versões conforme [o procedimento](COMO-ATUALIZAR.md). O envio no chat exige esse cadastro; não existe um upload público no site.
 
 ## Estrutura
 - `index.html`: interface completa estática, capa original, logos, projetos, contatos e links culturais.

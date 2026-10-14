@@ -58,5 +58,3 @@ document.addEventListener("click",function(event){
 });
 loadMedia();
 })();
-
-(function(){const button=document.getElementById("copy-submission");if(!button)return;button.addEventListener("click",async function(){const status=document.getElementById("submission-feedback");try{await navigator.clipboard.writeText("Tipo: foto\nAno: \nTítulo: \nLegenda: \nDestaque: não");status.textContent="Modelo copiado. Cole junto do arquivo aqui no chat.";}catch(e){status.textContent="Selecione e copie o modelo acima para enviar no chat.";}});})();
