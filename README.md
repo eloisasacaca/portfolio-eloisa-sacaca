@@ -4,6 +4,12 @@ Portfólio pessoal de Eloisa Sacaca: projetos de tecnologia, trajetória cultura
 
 Este projeto possui repositório próprio e funciona de forma independente do Projeto Sorteador. O Sorteador aparece apenas como um dos trabalhos apresentados.
 
+## Site publicado
+
+https://eloisa-sacaca.floot.app/
+
+Repositório exclusivo: https://github.com/eloisasacaca/portfolio-eloisa-sacaca
+
 ## Versões
 
 - `index.html`: versão estática completa, que pode ser aberta em um navegador ou hospedada no GitHub Pages.
