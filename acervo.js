@@ -27,8 +27,22 @@ function renderPhoto(item){
 }
 function renderComposition(item,index){
  const media=safeURL(item.mediaUrl),source=safeURL(item.externalUrl)||media;
- return '<article class="pm-compositionCard'+(item.isFeatured?' pm-featured':'')+'"><div class="pm-trackTop"><span class="pm-trackNumber" aria-hidden="true">'+String(index+1).padStart(2,"0")+'</span>'+meta(item)+'</div><h3 class="serif">'+escapeHTML(item.title)+'</h3><p class="pm-caption">'+escapeHTML(item.caption)+'</p>'+(media&&nativeMedia(item,"audio")?'<audio class="pm-audio" controls preload="none" aria-label="Ouvir '+escapeHTML(item.title)+'"><source src="'+escapeHTML(media)+'"'+(item.contentType?' type="'+escapeHTML(item.contentType)+'"':'')+'></audio>':'')+link(source,'<span aria-hidden="true">♫</span> Ouvir o registro <span aria-hidden="true">↗</span>',"pm-listenLink")+'</article>';
+ const driveMatch=media.match(/^https:\/\/drive\.google\.com\/file\/d\/([A-Za-z0-9_-]+)\//);
+ const driveId=driveMatch?driveMatch[1]:"";
+ const player=media&&nativeMedia(item,"audio")?'<audio class="pm-audio" controls preload="none" aria-label="Ouvir '+escapeHTML(item.title)+'"><source src="'+escapeHTML(media)+'"'+(item.contentType?' type="'+escapeHTML(item.contentType)+'"':'')+'></audio>':driveId?'<button class="pm-playDrive" type="button" data-drive-id="'+escapeHTML(driveId)+'" data-title="'+escapeHTML(item.title)+'" aria-label="Reproduzir '+escapeHTML(item.title)+'"><span aria-hidden="true">▶</span> Reproduzir música</button><div class="pm-driveMount"></div>':'';
+ return '<article class="pm-compositionCard'+(item.isFeatured?' pm-featured':'')+'"><div class="pm-trackTop"><span class="pm-trackNumber" aria-hidden="true">'+String(index+1).padStart(2,"0")+'</span>'+meta(item)+'</div><h3 class="serif">'+escapeHTML(item.title)+'</h3><p class="pm-caption">'+escapeHTML(item.caption)+'</p>'+player+link(source,'<span aria-hidden="true">♫</span> Ouvir o registro no Google Drive <span aria-hidden="true">↗</span>',"pm-listenLink")+'</article>';
 }
+document.addEventListener("click",function(event){
+ const button=event.target.closest(".pm-playDrive");if(!button)return;
+ const card=button.closest(".pm-compositionCard"),mount=card&&card.querySelector(".pm-driveMount");
+ if(!mount)return;
+ if(mount.querySelector("iframe")){mount.replaceChildren();button.innerHTML='<span aria-hidden="true">▶</span> Reproduzir música';return;}
+ document.querySelectorAll(".pm-driveMount iframe").forEach(frame=>frame.parentNode.replaceChildren());
+ document.querySelectorAll(".pm-playDrive").forEach(b=>b.innerHTML='<span aria-hidden="true">▶</span> Reproduzir música');
+ const iframe=document.createElement("iframe");iframe.src="https://drive.google.com/file/d/"+encodeURIComponent(button.dataset.driveId)+"/preview";iframe.title="Player de "+button.dataset.title;iframe.loading="eager";iframe.allow="autoplay";iframe.setAttribute("referrerpolicy","strict-origin-when-cross-origin");mount.appendChild(iframe);
+ button.textContent="Fechar player";
+});
+
 function renderVideo(item){
  const media=safeURL(item.mediaUrl),source=safeURL(item.externalUrl)||media,id=youtube(item.mediaUrl),poster=safeURL(item.posterUrl)||(id?'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg':'');
  const player=id?'<button class="video-load" type="button" data-video="'+id+'" data-title="'+escapeHTML(item.title)+'" aria-label="Reproduzir '+escapeHTML(item.title)+'"><img src="'+escapeHTML(poster)+'" alt="" loading="lazy"/><span class="play-icon" aria-hidden="true">▶</span><span class="play-label">ASSISTIR</span></button>':media&&nativeMedia(item,"video")?'<video class="pm-nativeVideo" controls playsinline preload="metadata" aria-label="'+escapeHTML(item.title)+'"'+(poster?' poster="'+escapeHTML(poster)+'"':'')+'><source src="'+escapeHTML(media)+'"'+(item.contentType?' type="'+escapeHTML(item.contentType)+'"':'')+'></video>':'<div class="pm-externalVideo">'+(poster?'<img src="'+escapeHTML(poster)+'" alt="" loading="lazy"/>':'')+link(source,"Assistir ao registro ↗","pm-externalLink")+'</div>';
