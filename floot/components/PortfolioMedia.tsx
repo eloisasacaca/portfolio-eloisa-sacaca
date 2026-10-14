@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "./Button";
+import { MediaSubmission } from "./MediaSubmission";
 import { usePortfolioMedia } from "../helpers/usePortfolioMedia";
 import { safeMediaUrl, youtubeId, isNativeMedia } from "../helpers/mediaPresentation";
 import type { MediaRecord } from "../endpoints/portfolio-media_GET.schema";
@@ -43,6 +44,7 @@ export function PortfolioMedia({ className, children }: { className?: string; ch
   if (isPending || isError) return <section className={"wrap archive " + (className || "")} id="acervo" aria-labelledby="archive-title">
     <h2 className="serif" id="archive-title">Memória que se faz presente.</h2>
     <p role={isError ? "alert" : "status"}>{isError ? "O acervo não carregou desta vez. Você pode tentar novamente." : "Carregando fotos, vídeos e composições…"}</p>
+    <MediaSubmission/>
     {isError && <Button variant="outline" onClick={() => void refetch()}>Tentar novamente</Button>}
   </section>;
   const photos = data.items.filter(item => item.kind === "photo");
@@ -54,6 +56,7 @@ export function PortfolioMedia({ className, children }: { className?: string; ch
         <h2 className="serif" id="archive-title">Memória que se faz presente.</h2></div>
         <a className="link-arrow" href="#composicoes">Minhas composições <span className="arrow" aria-hidden="true">↓</span></a></div>
       <p className="archive-intro">Da infância no Marabaixo aos palcos e encontros: registros organizados do ano mais antigo ao mais recente.</p>
+      <MediaSubmission/>
       <div className="photo-grid">{photos.map(item => {
         const media = safeMediaUrl(item.mediaUrl);
         return <figure className="archive-photo" key={item.id}>
