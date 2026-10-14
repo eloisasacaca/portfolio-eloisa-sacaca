@@ -64,7 +64,7 @@ document.addEventListener("click",async function(event){
 function renderVideo(item){
  const media=safeURL(item.mediaUrl),source=safeURL(item.externalUrl)||media,id=youtube(item.mediaUrl),poster=safeURL(item.posterUrl)||(id?'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg':'');
  const player=id?'<iframe class="pm-youtubeFrame" src="https://www.youtube-nocookie.com/embed/'+id+'?playsinline=1&rel=0" title="'+escapeHTML(item.title)+'" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>':media&&nativeMedia(item,"video")?'<video class="pm-nativeVideo" controls playsinline preload="metadata" aria-label="'+escapeHTML(item.title)+'"'+(poster?' poster="'+escapeHTML(poster)+'"':'')+'><source src="'+escapeHTML(media)+'"'+(item.contentType?' type="'+escapeHTML(item.contentType)+'"':'')+'></video>':'<div class="pm-externalVideo">'+(poster?'<img src="'+escapeHTML(poster)+'" alt="" loading="lazy"/>':'')+link(source,"Assistir ao registro ↗","pm-externalLink")+'</div>';
- return '<article class="video-card"><div class="video-player">'+player+'</div>'+meta(item)+'<h3>'+escapeHTML(item.title)+'</h3><p class="pm-caption">'+escapeHTML(item.caption)+'</p>'+link(source,"Abrir registro original ↗","video-original")+'</article>';
+ return '<article class="video-card"><div class="video-player">'+player+'</div>'+meta(item)+'<h3>'+escapeHTML(item.title)+'</h3><p class="pm-caption">'+escapeHTML(item.caption)+'</p>'+'</article>';
 }
 async function loadMedia(){
  const status=document.getElementById("media-status"),retry=document.getElementById("media-retry");
