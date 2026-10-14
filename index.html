@@ -124,6 +124,9 @@ dialog{background:var(--surface);color:var(--text);border:1px solid var(--line);
  .statement p:not(.eyebrow){display:block;margin:0;font-size:clamp(25px,7vw,32px);line-height:1.44;letter-spacing:-.02em;overflow-wrap:break-word}
  .about .section-title h2{font-size:clamp(35px,9.3vw,45px);line-height:1.17;letter-spacing:-.025em;overflow-wrap:break-word}
 }
+
+/* YouTube: um único botão Play, nativo do vídeo */
+.video-player .pm-youtubeFrame{display:block;width:100%;height:100%;aspect-ratio:16/9;border:0;border-radius:inherit}
 </style>
 </head>
 <body>
@@ -306,6 +309,6 @@ if(portrait.complete&&portrait.naturalWidth===0)portrait.dispatchEvent(new Event
 byId('year').textContent=String(new Date().getFullYear());
 })();
 </script>
-<script src="acervo.js?v=20261014-video-mobile" defer></script>
+<script src="acervo.js?v=20261014-singleplay" defer></script>
 </body>
 </html>
