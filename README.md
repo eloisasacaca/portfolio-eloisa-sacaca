@@ -6,7 +6,7 @@
 
 *“Memória que se faz presente.”*
 
-[🌐 Conheça meu portfólio]((https://eloisasacaca.github.io/portfolio-eloisa-sacaca/) | [💻 GitHub](https://github.com/eloisasacaca)
+[🌐 Conheça meu portfólio](https://eloisasacaca.github.io/portfolio-eloisa-sacaca/) | [💻 GitHub](https://github.com/eloisasacaca)
 
 ---
 
