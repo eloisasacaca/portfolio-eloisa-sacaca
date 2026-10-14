@@ -63,7 +63,7 @@ document.addEventListener("click",async function(event){
 
 function renderVideo(item){
  const media=safeURL(item.mediaUrl),source=safeURL(item.externalUrl)||media,id=youtube(item.mediaUrl),poster=safeURL(item.posterUrl)||(id?'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg':'');
- const player=id?'<button class="video-load" type="button" data-video="'+id+'" data-title="'+escapeHTML(item.title)+'" aria-label="Reproduzir '+escapeHTML(item.title)+'"><img src="'+escapeHTML(poster)+'" alt="" loading="lazy"/><span class="play-icon" aria-hidden="true">▶</span><span class="play-label">ASSISTIR</span></button>':media&&nativeMedia(item,"video")?'<video class="pm-nativeVideo" controls playsinline preload="metadata" aria-label="'+escapeHTML(item.title)+'"'+(poster?' poster="'+escapeHTML(poster)+'"':'')+'><source src="'+escapeHTML(media)+'"'+(item.contentType?' type="'+escapeHTML(item.contentType)+'"':'')+'></video>':'<div class="pm-externalVideo">'+(poster?'<img src="'+escapeHTML(poster)+'" alt="" loading="lazy"/>':'')+link(source,"Assistir ao registro ↗","pm-externalLink")+'</div>';
+ const player=id?'<iframe class="pm-youtubeFrame" src="https://www.youtube-nocookie.com/embed/'+id+'?playsinline=1&rel=0" title="'+escapeHTML(item.title)+'" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>':media&&nativeMedia(item,"video")?'<video class="pm-nativeVideo" controls playsinline preload="metadata" aria-label="'+escapeHTML(item.title)+'"'+(poster?' poster="'+escapeHTML(poster)+'"':'')+'><source src="'+escapeHTML(media)+'"'+(item.contentType?' type="'+escapeHTML(item.contentType)+'"':'')+'></video>':'<div class="pm-externalVideo">'+(poster?'<img src="'+escapeHTML(poster)+'" alt="" loading="lazy"/>':'')+link(source,"Assistir ao registro ↗","pm-externalLink")+'</div>';
  return '<article class="video-card"><div class="video-player">'+player+'</div>'+meta(item)+'<h3>'+escapeHTML(item.title)+'</h3><p class="pm-caption">'+escapeHTML(item.caption)+'</p>'+link(source,"Abrir registro original ↗","video-original")+'</article>';
 }
 async function loadMedia(){
@@ -82,11 +82,6 @@ async function loadMedia(){
  }catch(e){status.textContent="Não foi possível carregar o acervo. Tente novamente.";retry.hidden=false;}
 }
 document.getElementById("media-retry").addEventListener("click",loadMedia);
-document.addEventListener("click",function(event){
- const button=event.target.closest?.("[data-video]");if(!button)return;
- const id=button.dataset.video;if(!/^[A-Za-z0-9_-]{11}$/.test(id))return;
- const frame=document.createElement("iframe");frame.src="https://www.youtube-nocookie.com/embed/"+id+"?autoplay=1&playsinline=1&rel=0&enablejsapi=1";frame.title=button.dataset.title||"Vídeo cultural";
- frame.allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";frame.allowFullscreen=true;frame.setAttribute("loading","eager");frame.referrerPolicy="strict-origin-when-cross-origin";button.parentElement.replaceChildren(frame);frame.focus();
-});
+
 loadMedia();
 })();
