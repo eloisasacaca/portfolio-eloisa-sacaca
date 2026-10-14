@@ -51,7 +51,7 @@
       "isFeatured": false,
       "sortOrder": 4
     },
-        {
+    {
       "id": "2015-forum-mundial-educacao",
       "kind": "photo",
       "year": 2015,
@@ -144,7 +144,7 @@
       "contentType": "image/png",
       "sortOrder": 8
     },
-  {
+    {
       "id": "premio-mestre-jorge",
       "kind": "photo",
       "year": 2025,
@@ -273,10 +273,10 @@
       "year": null,
       "title": "Marabaixo das Crianças",
       "caption": "Registro de composição do meu acervo cultural.",
-      "mediaUrl": "https://drive.google.com/file/d/1y0k59hd60nc0q0ySjvpH8xf2zRJ9yYl1/view?usp=sharing",
-      "externalUrl": "https://drive.google.com/file/d/1y0k59hd60nc0q0ySjvpH8xf2zRJ9yYl1/view?usp=sharing",
+      "mediaUrl": "assets/audio/marabaixo-das-criancas.mp3",
       "isFeatured": true,
-      "sortOrder": 0
+      "sortOrder": 0,
+      "contentType": "audio/mpeg"
     },
     {
       "id": "composition-2",
@@ -284,10 +284,10 @@
       "year": null,
       "title": "Roda Gira",
       "caption": "Registro de composição do meu acervo cultural.",
-      "mediaUrl": "https://drive.google.com/file/d/14Yp-eBpGZckddlt3ZGEgYV1FUzQbTaah/view?usp=sharing",
-      "externalUrl": "https://drive.google.com/file/d/14Yp-eBpGZckddlt3ZGEgYV1FUzQbTaah/view?usp=sharing",
+      "mediaUrl": "assets/audio/roda-gira.mp3",
       "isFeatured": true,
-      "sortOrder": 1
+      "sortOrder": 1,
+      "contentType": "audio/mpeg"
     }
   ]
 }
