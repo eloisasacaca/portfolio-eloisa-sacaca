@@ -1,39 +1,85 @@
-# Portfólio de Eloisa Sacaca
+# Eloisa Sacaca
 
-Site pessoal sobre tecnologia, cultura amapaense e Marabaixo. Projeto próprio, separado do PROJETO-SORTEADOR.
+### Cultura, memória, música e tecnologia
 
-- **GitHub Pages (endereço após ativar):** https://eloisasacaca.github.io/portfolio-eloisa-sacaca/
-- **Site no Floot:** https://eloisa-sacaca.floot.app/
+**Percussionista | Marabaixo | Tecnologia | Amapá, Brasil**
 
-## Publicar no GitHub Pages
-1. Abrir [Settings → Pages](https://github.com/eloisasacaca/portfolio-eloisa-sacaca/settings/pages).
-2. Em **Source**, escolher **Deploy from a branch**.
-3. Escolher **main** e **/ (root)** e clicar **Save**.
-4. Aguardar a primeira publicação. Os commits seguintes na main atualizam o site.
+*“Memória que se faz presente.”*
 
-Não há build nem instalação de dependências para o site estático. `index.html`, `acervo.js`, `acervo.json`, `.nojekyll` e `assets/` estão na raiz do repositório. Os arquivos dentro de `floot/` não fazem parte da execução do GitHub Pages.
+[🌐 Conheça meu portfólio](https://eloisa-sacaca.floot.app/) | [💻 GitHub](https://github.com/eloisasacaca)
 
-## Acervo por ano
-Fotos, vídeos e composições têm título, legenda, ano e opção de destaque. Cada seção mostra os registros do ano mais antigo ao mais recente. Registros sem ano conhecido ficam ao final. Destaques recebem uma marca visual e não alteram essa ordem.
+---
 
-As composições têm uma seção própria. YouTube abre o player ao clicar; arquivos de vídeo e áudio enviados depois podem usar os controles nativos do navegador. Links do Google Drive abrem o registro original.
+## 🌻 Sobre mim
 
-O catálogo estático `acervo.json` tem os registros do GitHub Pages e usa as fotos armazenadas neste repositório. Não depende do backend Floot para funcionar. Na versão Floot, os mesmos registros ficam no banco `portfolio_media`; a API `/_api/portfolio-media` é somente leitura.
+Sou **Eloisa Sacaca**, amapaense, percussionista, profissional de tecnologia e apaixonada pela cultura popular.
 
+Minha trajetória reúne duas grandes paixões: **a preservação da cultura afro-amapaense e a tecnologia**.
 
-## Estrutura
-- `index.html`: interface completa estática, capa original, logos, projetos, contatos e links culturais.
-- `acervo.js`: consulta e renderiza o catálogo com validação de URLs e ordem crescente.
-- `acervo.json`: catálogo de fotos, vídeos e composições.
-- `assets/acervo/`: fotos do portfólio cultural fornecido pela autora.
-- `assets/*.svg`: logos originais preservadas como imagens incorporadas.
-- `floot/`: espelho dos arquivos da interface e do acervo modificados no projeto hospedado Floot; não é um projeto Node autônomo.
-- `floot/db/`: esquema e registros iniciais do catálogo, para referência/restauração em um banco vazio. Não executar novamente em banco existente.
+Neta do **Mestre Sacaca**, cresci cercada pelos tambores, tradições e manifestações culturais do Amapá. Desde os seis anos de idade, toco caixa de marabaixo, mantendo viva uma herança que representa identidade, ancestralidade e resistência.
 
-## Executar a edição estática localmente
-Na pasta do repositório, executar `python -m http.server 8000` e abrir http://localhost:8000/. Servir por HTTP permite carregar o catálogo JSON.
+Também sou técnica em Redes de Computadores, graduanda em Ciência da Computação e Análise e Desenvolvimento de Sistemas, com interesse em desenvolvimento web, criação de interfaces e soluções digitais.
 
-## Verificação
-Código Floot sem erros de tipos. Consulta do acervo validada com 15 registros reais. Edição estática verificada para ordenação, 10 fotos, 3 vídeos, 2 composições em destaque, acionamento do player, suporte a áudio/vídeo local, legendas escapadas, rejeição de URLs inseguras e estado de falha no carregamento.
+## 🥁 Marabaixo, cultura e ancestralidade
 
-A publicação GitHub Pages depende da ativação única em Settings → Pages. Alterar arquivos aqui não publica o código da versão Floot: a interface Floot precisa da própria publicação; inclusões no banco são lidas ao carregar a página.
+O marabaixo é parte fundamental da minha identidade.
+
+Ao longo da minha trajetória, participei de diferentes iniciativas culturais, entre elas:
+
+- **Marabaixo do Arthur Sacaca:** valorização da cultura e transmissão dos saberes às novas gerações.
+- **Marabaixo da Juventude:** participação juvenil na preservação e continuidade das tradições.
+- **Associação Cultural Devotos de São José:** fortalecimento das manifestações culturais e religiosas amapaenses.
+
+Cada toque de caixa, apresentação e encontro representa a continuidade da nossa história.
+
+## 🎶 Música e percussão
+
+Minha experiência musical também se estende ao samba e a outras manifestações rítmicas.
+
+Como percussionista do **Samba New**, vivencio diferentes possibilidades da música, contribuindo com a percussão e compartilhando experiências em apresentações e eventos.
+
+Este portfólio reúne registros dessa caminhada por meio de fotografias, vídeos, apresentações e composições.
+
+## 💻 Tecnologia e desenvolvimento
+
+A tecnologia representa outra dimensão da minha trajetória: a possibilidade de transformar ideias em ferramentas úteis.
+
+Tenho experiência com suporte técnico, redes, infraestrutura de TI e desenvolvimento de sistemas, além de estudos voltados à programação.
+
+**Tecnologias e ferramentas:**
+
+HTML5 • CSS3 • JavaScript • React • Python • Git • GitHub
+
+Acredito que cultura e tecnologia podem caminhar juntas, criando novas formas de preservar memórias, ampliar o acesso à informação e conectar pessoas.
+
+## 📸 Meu acervo e minha trajetória
+
+Este portfólio é também um espaço de documentação da minha história.
+
+Nele, compartilho:
+
+- **Memórias e registros históricos:** fotografias organizadas cronologicamente.
+- **Apresentações culturais:** participações em eventos, encontros e celebrações.
+- **Vídeos:** momentos que registram manifestações culturais e musicais.
+- **Composições:** um espaço especial para minhas criações musicais.
+- **Projetos:** trabalhos e experiências desenvolvidos ao longo da minha formação.
+
+Cada registro busca preservar seu contexto, ano e significado.
+
+## ✨ Memória que se faz presente
+
+Mais do que apresentar minha trajetória, este portfólio nasceu do desejo de manter vivas as histórias que me formaram.
+
+É um encontro entre a ancestralidade que carrego, a música que me acompanha e a tecnologia que me permite construir novos caminhos.
+
+**Porque preservar a memória é também construir o futuro.**
+
+---
+
+**Eloisa Sacaca**
+
+*Da tradição dos tambores às possibilidades da tecnologia.*
+
+📍 Macapá — Amapá — Brasil
+
+[Conheça meu portfólio](https://eloisa-sacaca.floot.app/)
