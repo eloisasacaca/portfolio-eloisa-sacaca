@@ -27,7 +27,6 @@ O marabaixo é parte fundamental da minha identidade.
 Ao longo da minha trajetória, participei de diferentes iniciativas culturais, entre elas:
 
 - **Marabaixo do Arthur Sacaca:** valorização da cultura e transmissão dos saberes às novas gerações.
-- **Marabaixo da Juventude:** participação juvenil na preservação e continuidade das tradições.
 - **Associação Cultural Devotos de São José:** fortalecimento das manifestações culturais e religiosas amapaenses.
 
 Cada toque de caixa, apresentação e encontro representa a continuidade da nossa história.
