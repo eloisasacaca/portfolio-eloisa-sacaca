@@ -72,8 +72,8 @@ dialog{background:var(--surface);color:var(--text);border:1px solid var(--line);
 
 
 /* Reprodução das composições, exclusivamente nesta seção */
-#composicoes .pm-playDrive{display:inline-flex;align-items:center;gap:10px;margin-top:20px;padding:11px 16px;border:0;border-radius:10px;background:var(--ink);color:var(--paper);font-size:14px;font-weight:700}
-#composicoes .pm-playDrive:hover{opacity:.88}
+#composicoes .pm-playNative,#composicoes .pm-playDrive{display:inline-flex;align-items:center;gap:10px;margin-top:20px;padding:11px 16px;border:0;border-radius:10px;background:var(--ink);color:var(--paper);font-size:14px;font-weight:700}
+#composicoes .pm-playNative:hover,#composicoes .pm-playDrive:hover{opacity:.88}
 #composicoes .pm-driveMount iframe{display:block;width:100%;height:180px;border:1px solid var(--line);border-radius:12px;margin-top:14px;background:var(--surface)}
 </style>
 </head>
@@ -257,6 +257,6 @@ if(portrait.complete&&portrait.naturalWidth===0)portrait.dispatchEvent(new Event
 byId('year').textContent=String(new Date().getFullYear());
 })();
 </script>
-<script src="acervo.js?v=20261014-directplay3" defer></script>
+<script src="acervo.js?v=20261014-mp3" defer></script>
 </body>
 </html>
