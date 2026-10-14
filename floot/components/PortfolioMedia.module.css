@@ -1,0 +1,26 @@
+.meta{display:flex;align-items:center;flex-wrap:wrap;gap:10px;font-size:11px;letter-spacing:.04em;color:var(--orange);margin-top:12px;min-height:20px}
+.badge{display:inline-block;border:1px solid var(--line);border-radius:30px;padding:2px 9px;font-size:9px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--ink);background:var(--soft)}
+.caption{font-size:12px;line-height:1.75;color:var(--muted);margin:7px 0 0;overflow-wrap:anywhere}
+.playButton{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;min-height:0!important;padding:0!important;border:0!important;border-radius:0!important;background:#173c32!important;color:#fffdf8!important;display:grid!important;place-items:center!important}
+.playButton>img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;opacity:.72;transition:opacity .2s}
+.playButton:hover>img{opacity:.9}
+.playButton:focus-visible{outline:3px solid var(--orange);outline-offset:-5px}
+.nativeVideo{width:100%;height:100%;position:absolute;inset:0;object-fit:contain}
+.externalVideo{position:absolute;inset:0;display:grid;place-items:center}
+.externalVideo>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.5}
+.externalLink{position:relative;z-index:1;background:var(--paper);color:var(--ink);padding:10px 18px;border-radius:30px;font-size:12px}
+.compositionSection{padding:65px 0 74px;border-top:1px solid var(--line);background:var(--soft);scroll-margin-top:20px}
+.compositionGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.compositionCard{background:var(--surface);padding:28px 30px 26px;border:1px solid var(--line);border-radius:14px;position:relative;overflow:hidden}
+.featured{border-top:3px solid var(--orange)}
+.trackTop{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:27px}
+.trackTop .meta{margin-top:0;justify-content:flex-end}
+.trackNumber{font:400 29px/1 Georgia,serif;letter-spacing:-1px;color:var(--orange)}
+.compositionCard h3{font-size:29px;line-height:1.3;letter-spacing:-.5px;color:var(--ink);margin:0}
+.compositionCard .caption{max-width:48ch;margin-top:12px}
+.listenLink{display:flex;align-items:center;gap:10px;border-top:1px solid var(--line);padding-top:18px;margin-top:23px;font-size:12px;font-weight:600;color:var(--ink)}
+.listenLink>span:last-child{margin-left:auto}
+.listenLink:hover{color:var(--orange)}
+.audio{width:100%;margin-top:18px;height:42px}
+@media(max-width:580px){.compositionSection{padding:43px 0 47px}.compositionGrid{grid-template-columns:1fr;gap:18px}.compositionCard{padding:23px}.compositionCard h3{font-size:28px}.trackTop{margin-bottom:22px}}
+@media print{.compositionSection{padding:20px 0}.audio{display:none}.compositionCard{break-inside:avoid}}

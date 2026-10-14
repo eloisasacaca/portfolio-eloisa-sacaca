@@ -1,0 +1,159 @@
+{
+  "items": [
+    {
+      "id": "canva-MAGWMxqnyYA",
+      "kind": "photo",
+      "year": 2006,
+      "title": "Apresentação na União dos Negros do Amapá",
+      "caption": "Apresentação na União dos Negros do Amapá",
+      "mediaUrl": "assets/acervo/canva-MAGWMxqnyYA.jpg",
+      "contentType": "image/jpeg",
+      "sortOrder": 0
+    },
+    {
+      "id": "canva-MAGWRlY7YYU",
+      "kind": "photo",
+      "year": 2009,
+      "title": "Apresentação no Museu Sacaca",
+      "caption": "Apresentação no Museu Sacaca",
+      "mediaUrl": "assets/acervo/canva-MAGWRlY7YYU.jpg",
+      "contentType": "image/jpeg",
+      "sortOrder": 1
+    },
+    {
+      "id": "canva-MAGWRxvXKZE",
+      "kind": "photo",
+      "year": 2014,
+      "title": "Fundadores do Marabaixo dos Devotos de São José",
+      "caption": "Fundadores do Marabaixo dos Devotos de São José",
+      "mediaUrl": "assets/acervo/canva-MAGWRxvXKZE.jpg",
+      "contentType": "image/jpeg",
+      "sortOrder": 2
+    },
+    {
+      "id": "canva-MAGWUrnhG6w",
+      "kind": "photo",
+      "year": 2015,
+      "title": "Oficina com o Projeto Mulheres do Aluá, Roraima",
+      "caption": "Oficina com o Projeto Mulheres do Aluá, Roraima",
+      "mediaUrl": "assets/acervo/canva-MAGWUrnhG6w.jpg",
+      "contentType": "image/jpeg",
+      "sortOrder": 3
+    },
+    {
+      "id": "canva-MAGWR1hoe0Y",
+      "kind": "photo",
+      "year": 2021,
+      "title": "Gravação para o Festival Manas com Patrícia Bastos",
+      "caption": "Gravação para o Festival Manas com Patrícia Bastos",
+      "mediaUrl": "assets/acervo/canva-MAGWR1hoe0Y.jpg",
+      "contentType": "image/jpeg",
+      "sortOrder": 4
+    },
+    {
+      "id": "canva-MAGWR8UGt98",
+      "kind": "photo",
+      "year": 2021,
+      "title": "Gravação para o Festival Manas com Luedji Luna",
+      "caption": "Gravação para o Festival Manas com Luedji Luna",
+      "mediaUrl": "assets/acervo/canva-MAGWR8UGt98.jpg",
+      "contentType": "image/jpeg",
+      "sortOrder": 5
+    },
+    {
+      "id": "canva-MAGWSMmYrg4",
+      "kind": "photo",
+      "year": 2022,
+      "title": "Aniversário do Marabaixo dos Devotos de São José",
+      "caption": "Aniversário do Marabaixo dos Devotos de São José",
+      "mediaUrl": "assets/acervo/canva-MAGWSMmYrg4.jpg",
+      "contentType": "image/jpeg",
+      "sortOrder": 6
+    },
+    {
+      "id": "canva-MAGWSDifWrI",
+      "kind": "photo",
+      "year": 2022,
+      "title": "Samba New no Telão Praça do Coco",
+      "caption": "Samba New no Telão Praça do Coco",
+      "mediaUrl": "assets/acervo/canva-MAGWSDifWrI.jpg",
+      "contentType": "image/jpeg",
+      "sortOrder": 7
+    },
+    {
+      "id": "canva-MAGWSOzRw1Y",
+      "kind": "photo",
+      "year": 2023,
+      "title": "Samba New no Gandaia",
+      "caption": "Samba New no Gandaia",
+      "mediaUrl": "assets/acervo/canva-MAGWSOzRw1Y.png",
+      "contentType": "image/png",
+      "sortOrder": 8
+    },
+    {
+      "id": "canva-MAGWSGA7HhY",
+      "kind": "photo",
+      "year": 2023,
+      "title": "Encontro com músicos do Fundo de Quintal",
+      "caption": "Encontro com músicos do Fundo de Quintal",
+      "mediaUrl": "assets/acervo/canva-MAGWSGA7HhY.png",
+      "contentType": "image/png",
+      "sortOrder": 9
+    },
+    {
+      "id": "youtube-OK8yVSv6-V0",
+      "kind": "video",
+      "year": 2019,
+      "title": "Marabaixo — O Show",
+      "caption": "Apresentação · abril de 2019",
+      "mediaUrl": "https://www.youtube.com/watch?v=OK8yVSv6-V0",
+      "externalUrl": "https://www.youtube.com/watch?v=OK8yVSv6-V0",
+      "posterUrl": "https://i.ytimg.com/vi/OK8yVSv6-V0/hqdefault.jpg",
+      "sortOrder": 0
+    },
+    {
+      "id": "youtube--5ZAE1wROUs",
+      "kind": "video",
+      "year": 2021,
+      "title": "Patrícia Bastos e Luedji Luna",
+      "caption": "Festival MANA · 2021",
+      "mediaUrl": "https://www.youtube.com/watch?v=-5ZAE1wROUs",
+      "externalUrl": "https://www.youtube.com/watch?v=-5ZAE1wROUs",
+      "posterUrl": "https://i.ytimg.com/vi/-5ZAE1wROUs/hqdefault.jpg",
+      "sortOrder": 1
+    },
+    {
+      "id": "youtube-fzbbwkVlQ9s",
+      "kind": "video",
+      "year": 2022,
+      "title": "Dançando com Oxum — Timbres e Temperos",
+      "caption": "Clipe · 2022",
+      "mediaUrl": "https://www.youtube.com/watch?v=fzbbwkVlQ9s",
+      "externalUrl": "https://www.youtube.com/watch?v=fzbbwkVlQ9s",
+      "posterUrl": "https://i.ytimg.com/vi/fzbbwkVlQ9s/hqdefault.jpg",
+      "sortOrder": 2
+    },
+    {
+      "id": "composition-1",
+      "kind": "composition",
+      "year": null,
+      "title": "Marabaixo das Crianças",
+      "caption": "Registro de composição do meu acervo cultural.",
+      "mediaUrl": "https://drive.google.com/file/d/1y0k59hd60nc0q0ySjvpH8xf2zRJ9yYl1/view?usp=sharing",
+      "externalUrl": "https://drive.google.com/file/d/1y0k59hd60nc0q0ySjvpH8xf2zRJ9yYl1/view?usp=sharing",
+      "isFeatured": true,
+      "sortOrder": 0
+    },
+    {
+      "id": "composition-2",
+      "kind": "composition",
+      "year": null,
+      "title": "Roda Gira",
+      "caption": "Registro de composição do meu acervo cultural.",
+      "mediaUrl": "https://drive.google.com/file/d/14Yp-eBpGZckddlt3ZGEgYV1FUzQbTaah/view?usp=sharing",
+      "externalUrl": "https://drive.google.com/file/d/14Yp-eBpGZckddlt3ZGEgYV1FUzQbTaah/view?usp=sharing",
+      "isFeatured": true,
+      "sortOrder": 1
+    }
+  ]
+}
