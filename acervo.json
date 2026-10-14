@@ -11,7 +11,17 @@
       "sortOrder": 0
     },
     {
-      "id": "canva-MAGWRlY7YYU",
+      "id": "2007-ensaio",
+      "kind": "photo",
+      "year": 2007,
+      "title": "Ensaio para primeira apresentação",
+      "caption": "Ensaio para primeira apresentação",
+      "mediaUrl": "assets/acervo/2007-ensaio.png",
+      "contentType": "image/png",
+      "sortOrder": 0
+    },
+    {
+      "id": "2009-apresentacao-museu-sacaca",
       "kind": "photo",
       "year": 2009,
       "title": "Apresentação no Museu Sacaca",
@@ -21,13 +31,13 @@
       "sortOrder": 1
     },
     {
-      "id": "canva-MAGWUrnhG6w",
+      "id": "2015-oficina-mulheres-alua",
       "kind": "photo",
       "year": 2015,
       "title": "Oficina com o Projeto Mulheres do Aluá, Roraima",
       "caption": "Oficina com o Projeto Mulheres do Aluá, Roraima",
-      "mediaUrl": "assets/acervo/canva-MAGWUrnhG6w.jpg",
-      "contentType": "image/jpeg",
+      "mediaUrl": "assets/acervo/2015-mulheres-do-alua.png",
+      "contentType": "image/png",
       "sortOrder": 3
     },
     {
@@ -41,6 +51,17 @@
       "isFeatured": false,
       "sortOrder": 4
     },
+        {
+      "id": "2015-forum-mundial-educacao",
+      "kind": "photo",
+      "year": 2015,
+      "title": "III Fórum Mundial de Educação Profissional e Tecnológica",
+      "caption": "III Fórum Mundial de Educação Profissional e Tecnológica",
+      "mediaUrl": "assets/acervo/2015-forum.jpg",
+      "contentType": "image/jpeg",
+      "isFeatured": false,
+      "sortOrder": 4
+    },
     {
       "id": "9e51a8d3-a7fa-4195-aa06-6aaa7cc46371",
       "kind": "photo",
@@ -48,6 +69,17 @@
       "title": "Apresentação no Congresso Norte Nordeste de Pesquisa e Inovação",
       "caption": "Apresentação no Congresso Norte Nordeste de Pesquisa e Inovação",
       "mediaUrl": "assets/acervo/2015-congresso-norte-nordeste-pesquisa-inovacao.png",
+      "contentType": "image/png",
+      "isFeatured": false,
+      "sortOrder": 5
+    },
+    {
+      "id": "oab-ap",
+      "kind": "photo",
+      "year": 2016,
+      "title": "Apresentação OAB-AP",
+      "caption": "Apresentação OAB-AP",
+      "mediaUrl": "assets/acervo/2026-oab.png",
       "contentType": "image/png",
       "isFeatured": false,
       "sortOrder": 5
@@ -93,6 +125,16 @@
       "sortOrder": 7
     },
     {
+      "id": "posse-governador-do-amapa",
+      "kind": "photo",
+      "year": 2023,
+      "title": "Posse do Governador do Amapá",
+      "caption": "Posse do Governador do Amapá",
+      "mediaUrl": "assets/acervo/2023-posse-clecio.png",
+      "contentType": "image/png",
+      "sortOrder": 1
+    },
+    {
       "id": "canva-MAGWSOzRw1Y",
       "kind": "photo",
       "year": 2023,
@@ -102,15 +144,95 @@
       "contentType": "image/png",
       "sortOrder": 8
     },
-    {
-      "id": "canva-MAGWSGA7HhY",
+  {
+      "id": "premio-mestre-jorge",
       "kind": "photo",
-      "year": 2023,
-      "title": "Encontro com músicos do Fundo de Quintal",
-      "caption": "Encontro com músicos do Fundo de Quintal",
-      "mediaUrl": "assets/acervo/canva-MAGWSGA7HhY.png",
-      "contentType": "image/png",
-      "sortOrder": 9
+      "year": 2025,
+      "title": "Premio Mestre Jorge",
+      "caption": "Premio Mestre Jorge",
+      "mediaUrl": "assets/acervo/2025-premio-mestre-jorge.jpg",
+      "contentType": "image/jpeg",
+      "sortOrder": 0
+    },
+    {
+      "id": "ensaio-de-rua",
+      "kind": "photo",
+      "year": 2026,
+      "title": "Estação Primeira de Mangueira",
+      "caption": "Estação Primeira de Mangueira",
+      "mediaUrl": "assets/acervo/2026-ensaio-de-rua.jpg",
+      "contentType": "image/jpeg",
+      "sortOrder": 0
+    },
+    {
+      "id": "ensaio-tecnico",
+      "kind": "photo",
+      "year": 2026,
+      "title": "Ensaio técnico - Estação Primeira de Mangueira",
+      "caption": "Ensaio técnico - Estação Primeira de Mangueira",
+      "mediaUrl": "assets/acervo/2026-primeiro-ensaio-tecnico.jpg",
+      "contentType": "image/jpeg",
+      "sortOrder": 1
+    },
+    {
+      "id": "gravacao-globo",
+      "kind": "photo",
+      "year": 2026,
+      "title": "Cidade do Samba - Gravação para a Globo",
+      "caption": "Cidade do Samba - Gravação para a Globo",
+      "mediaUrl": "assets/acervo/2026-cidade-do-samba-rj.jpeg",
+      "contentType": "image/jpeg",
+      "sortOrder": 2
+    },
+    {
+      "id": "gravacao-globo-bateria",
+      "kind": "photo",
+      "year": 2026,
+      "title": "Cidade do Samba - Gravação para a Globo com a Bateria da Mangueira",
+      "caption": "Cidade do Samba - Gravação para a Globo com a Bateria da Mangueira",
+      "mediaUrl": "assets/acervo/2026-cidade-do-samba-com-bateria-da-magueira.jpeg",
+      "contentType": "image/jpeg",
+      "sortOrder": 3
+    },
+    {
+      "id": "rainha-da-bateria",
+      "kind": "photo",
+      "year": 2026,
+      "title": "Rainha de Bateria da Mangueira - Evelyn Bastos",
+      "caption": "Rainha de Bateria da Mangueira - Evelyn Bastos",
+      "mediaUrl": "assets/acervo/2026-rainha.jpeg",
+      "contentType": "image/jpeg",
+      "sortOrder": 4
+    },
+    {
+      "id": "Desfile-da-Mangueira",
+      "kind": "photo",
+      "year": 2026,
+      "title": "Carnaval - Desfile da Mangueira",
+      "caption": "Carnaval - Desfile da Mangueira",
+      "mediaUrl": "assets/acervo/2026-desfile-carnaval-rj.jpeg",
+      "contentType": "image/jpeg",
+      "sortOrder": 5
+    },
+    {
+      "id": "Desfile-da-Mangueira-das-Campeas",
+      "kind": "photo",
+      "year": 2026,
+      "title": "Carnaval - Desfile das Campeães Mangueira",
+      "caption": "Carnaval - Desfile das Campeães Mangueira",
+      "mediaUrl": "assets/acervo/1---magueira-1378.jpeg",
+      "contentType": "image/jpeg",
+      "sortOrder": 6
+    },
+    {
+      "id": "certificado-de-reconhecimento",
+      "kind": "photo",
+      "year": 2026,
+      "title": "Cerificado de Reconhecimento - Assembleia Legislativa do Estado do Amapá",
+      "caption": "Cerificado de Reconhecimento - Assembleia Legislativa do Estado do Amapá",
+      "mediaUrl": "assets/acervo/2026-certificado-de-reconhecimento.jpg",
+      "contentType": "image/jpeg",
+      "sortOrder": 7
     },
     {
       "id": "youtube-OK8yVSv6-V0",
