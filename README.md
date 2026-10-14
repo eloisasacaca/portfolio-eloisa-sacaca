@@ -6,7 +6,7 @@
 
 *“Memória que se faz presente.”*
 
-[🌐 Conheça meu portfólio](https://eloisa-sacaca.floot.app/) | [💻 GitHub](https://github.com/eloisasacaca)
+[🌐 Conheça meu portfólio]((https://eloisasacaca.github.io/portfolio-eloisa-sacaca/) | [💻 GitHub](https://github.com/eloisasacaca)
 
 ---
 
@@ -82,4 +82,4 @@ Mais do que apresentar minha trajetória, este portfólio nasceu do desejo de ma
 
 📍 Macapá — Amapá — Brasil
 
-[Conheça meu portfólio](https://eloisa-sacaca.floot.app/)
+[Conheça meu portfólio](https://eloisasacaca.github.io/portfolio-eloisa-sacaca/)
